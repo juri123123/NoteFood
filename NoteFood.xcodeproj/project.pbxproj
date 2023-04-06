@@ -1,0 +1,399 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CB9EBFAA29DD466B00C9687B /* NoteFoodApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9EBFA929DD466B00C9687B /* NoteFoodApp.swift */; };
+		CB9EBFAE29DD466C00C9687B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB9EBFAD29DD466C00C9687B /* Assets.xcassets */; };
+		CB9EBFB129DD466C00C9687B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB9EBFB029DD466C00C9687B /* Preview Assets.xcassets */; };
+		CB9EBFB829DD472F00C9687B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CB9EBFB729DD472F00C9687B /* GoogleService-Info.plist */; };
+		CB9EBFBF29DD544000C9687B /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = CB9EBFBE29DD544000C9687B /* FirebaseFirestore */; };
+		CB9EBFC129DD544000C9687B /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CB9EBFC029DD544000C9687B /* FirebaseFirestoreSwift */; };
+		CB9EBFC529DD554F00C9687B /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9EBFC429DD554F00C9687B /* ProfileView.swift */; };
+		CB9EBFC729DD593500C9687B /* MainPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9EBFC629DD593500C9687B /* MainPageView.swift */; };
+		CB9EBFD229DD702F00C9687B /* DateValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9EBFD129DD702F00C9687B /* DateValue.swift */; };
+		CB9EBFD429DE9B6A00C9687B /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9EBFD329DE9B6A00C9687B /* Task.swift */; };
+		CB9EBFD629DEA22E00C9687B /* CustomCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9EBFD529DEA22E00C9687B /* CustomCalendar.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		CB9EBFA629DD466B00C9687B /* NoteFood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoteFood.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB9EBFA929DD466B00C9687B /* NoteFoodApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteFoodApp.swift; sourceTree = "<group>"; };
+		CB9EBFAD29DD466C00C9687B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CB9EBFB029DD466C00C9687B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CB9EBFB729DD472F00C9687B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CB9EBFC429DD554F00C9687B /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		CB9EBFC629DD593500C9687B /* MainPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPageView.swift; sourceTree = "<group>"; };
+		CB9EBFD129DD702F00C9687B /* DateValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateValue.swift; sourceTree = "<group>"; };
+		CB9EBFD329DE9B6A00C9687B /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		CB9EBFD529DEA22E00C9687B /* CustomCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCalendar.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CB9EBFA329DD466B00C9687B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB9EBFBF29DD544000C9687B /* FirebaseFirestore in Frameworks */,
+				CB9EBFC129DD544000C9687B /* FirebaseFirestoreSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CB9EBF9D29DD466B00C9687B = {
+			isa = PBXGroup;
+			children = (
+				CB9EBFA829DD466B00C9687B /* NoteFood */,
+				CB9EBFA729DD466B00C9687B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CB9EBFA729DD466B00C9687B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CB9EBFA629DD466B00C9687B /* NoteFood.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CB9EBFA829DD466B00C9687B /* NoteFood */ = {
+			isa = PBXGroup;
+			children = (
+				CB9EBFB729DD472F00C9687B /* GoogleService-Info.plist */,
+				CB9EBFA929DD466B00C9687B /* NoteFoodApp.swift */,
+				CB9EBFAD29DD466C00C9687B /* Assets.xcassets */,
+				CB9EBFAF29DD466C00C9687B /* Preview Content */,
+				CB9EBFC429DD554F00C9687B /* ProfileView.swift */,
+				CB9EBFC629DD593500C9687B /* MainPageView.swift */,
+				CB9EBFD129DD702F00C9687B /* DateValue.swift */,
+				CB9EBFD329DE9B6A00C9687B /* Task.swift */,
+				CB9EBFD529DEA22E00C9687B /* CustomCalendar.swift */,
+			);
+			path = NoteFood;
+			sourceTree = "<group>";
+		};
+		CB9EBFAF29DD466C00C9687B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				CB9EBFB029DD466C00C9687B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CB9EBFA529DD466B00C9687B /* NoteFood */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB9EBFB429DD466C00C9687B /* Build configuration list for PBXNativeTarget "NoteFood" */;
+			buildPhases = (
+				CB9EBFA229DD466B00C9687B /* Sources */,
+				CB9EBFA329DD466B00C9687B /* Frameworks */,
+				CB9EBFA429DD466B00C9687B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NoteFood;
+			packageProductDependencies = (
+				CB9EBFBE29DD544000C9687B /* FirebaseFirestore */,
+				CB9EBFC029DD544000C9687B /* FirebaseFirestoreSwift */,
+			);
+			productName = NoteFood;
+			productReference = CB9EBFA629DD466B00C9687B /* NoteFood.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CB9EBF9E29DD466B00C9687B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					CB9EBFA529DD466B00C9687B = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+				};
+			};
+			buildConfigurationList = CB9EBFA129DD466B00C9687B /* Build configuration list for PBXProject "NoteFood" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CB9EBF9D29DD466B00C9687B;
+			packageReferences = (
+				CB9EBFBD29DD544000C9687B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = CB9EBFA729DD466B00C9687B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CB9EBFA529DD466B00C9687B /* NoteFood */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CB9EBFA429DD466B00C9687B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB9EBFB129DD466C00C9687B /* Preview Assets.xcassets in Resources */,
+				CB9EBFAE29DD466C00C9687B /* Assets.xcassets in Resources */,
+				CB9EBFB829DD472F00C9687B /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CB9EBFA229DD466B00C9687B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB9EBFC529DD554F00C9687B /* ProfileView.swift in Sources */,
+				CB9EBFC729DD593500C9687B /* MainPageView.swift in Sources */,
+				CB9EBFAA29DD466B00C9687B /* NoteFoodApp.swift in Sources */,
+				CB9EBFD629DEA22E00C9687B /* CustomCalendar.swift in Sources */,
+				CB9EBFD429DE9B6A00C9687B /* Task.swift in Sources */,
+				CB9EBFD229DD702F00C9687B /* DateValue.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		CB9EBFB229DD466C00C9687B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CB9EBFB329DD466C00C9687B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CB9EBFB529DD466C00C9687B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"NoteFood/Preview Content\"";
+				DEVELOPMENT_TEAM = L9J3VF6GK2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ios.practice.NoteFood;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CB9EBFB629DD466C00C9687B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"NoteFood/Preview Content\"";
+				DEVELOPMENT_TEAM = L9J3VF6GK2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ios.practice.NoteFood;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CB9EBFA129DD466B00C9687B /* Build configuration list for PBXProject "NoteFood" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB9EBFB229DD466C00C9687B /* Debug */,
+				CB9EBFB329DD466C00C9687B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB9EBFB429DD466C00C9687B /* Build configuration list for PBXNativeTarget "NoteFood" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB9EBFB529DD466C00C9687B /* Debug */,
+				CB9EBFB629DD466C00C9687B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CB9EBFBD29DD544000C9687B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CB9EBFBE29DD544000C9687B /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CB9EBFBD29DD544000C9687B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		CB9EBFC029DD544000C9687B /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CB9EBFBD29DD544000C9687B /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = CB9EBF9E29DD466B00C9687B /* Project object */;
+}
