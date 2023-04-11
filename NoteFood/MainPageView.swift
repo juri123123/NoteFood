@@ -7,6 +7,10 @@
 
 import SwiftUI
 
+struct ColorManager {
+    static let BackgroundColor = Color("BackgroundColor")
+}
+
 struct MainPageView: View {
     
     @State var currentDate: Date = Date()
@@ -15,51 +19,65 @@ struct MainPageView: View {
     
     var body: some View {
         NavigationView {
-            VStack {
-                
-                
-                CustomCalendar(currentDate: $currentDate)
-                
-                
-                HStack {
-                    Button(action: {
-                        
-                    }) {
-                        ZStack{
-                            Circle()
-                                .scale(0.2)
+            ZStack {
+                ColorManager.BackgroundColor.ignoresSafeArea()
+                VStack {
+                    HStack {
+                        NavigationLink(destination: ProfileView()) {
+                            Image(systemName: "line.3.horizontal")
                                 .foregroundColor(.orange)
-                            Image(systemName: "plus")
-                                .foregroundColor(.white)
+                                .font(.system(size: 30))
+                            
+                            
                         }
+                        .padding(.leading)
+                        Spacer()
                     }
-                    Button(action: {
+                    CustomCalendar(currentDate: $currentDate)
+                    HStack(spacing: 200) {
+                        Button(action: {
+                            
+                        }) {
+                            ZStack{
+                                Circle()
+                                    .frame(width: 45)
+                                    .foregroundColor(.orange)
+                                Image(systemName: "plus")
+                                    .foregroundColor(.white)
+                                    .font(.system(size: 25))
+                            }
+                        }
                         
-                    }) {
-                        ZStack{
-                            Circle()
-                                .scale(0.2)
-                                .foregroundColor(.orange)
-                            Image(systemName: "checkmark")
-                                .foregroundColor(.white)
+                        Button(action: {
+                            
+                        }) {
+                            ZStack{
+                                Circle()
+                                    .frame(width: 45)
+                                    .foregroundColor(.orange)
+                                Image(systemName: "checkmark")
+                                    .foregroundColor(.white)
+                                    .font(.system(size: 25))
+                            }
                         }
-                    }
-                }//HStack
+                    }//HStack
+                    
+                    
+                    
+                }//VStack
                 
-                
-                
-            }//VStack
-//            .toolbar{
-//                ToolbarItem(placement: .navigationBarLeading) {
-//                    NavigationLink{
-//                        ProfileView()
-//                    } label: {
-//                        Image(systemName: "line.3.horizontal")
-//                            .foregroundColor(.orange)
-//                    }
-//                }
-//            }
-//            navigationBarHidden(true)
+            }//ZStack
+            //            .toolbar{
+            //                ToolbarItem(placement: .navigationBarLeading) {
+            //                    NavigationLink{
+            //                        ProfileView()
+            //                    } label: {
+            //                        Image(systemName: "line.3.horizontal")
+            //                            .foregroundColor(.orange)
+            //                    }
+            //                }
+            //            }
+            .navigationBarHidden(true)
             
         }//NavigationView
         

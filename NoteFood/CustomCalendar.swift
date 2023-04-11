@@ -49,7 +49,7 @@ struct CustomCalendar: View {
 
                 
             }
-            .padding(.horizontal)
+            .padding()
             
             // Day View...
             HStack(spacing: 0) {
@@ -58,6 +58,7 @@ struct CustomCalendar: View {
                         .font(.callout)
                         .fontWeight(.semibold)
                         .frame(maxWidth: .infinity)
+                        .foregroundColor(.gray)
                 }
             }
             
@@ -71,7 +72,7 @@ struct CustomCalendar: View {
                   CardView(value: value)
                         .background(
                             Capsule()
-                                .fill(Color("Pink"))
+                                .fill(.orange)
                                 .padding(.horizontal, 8)
                                 .opacity(isSameDay(date1: value.date, date2: currentDate) ? 1 : 0)
                         )
@@ -81,43 +82,43 @@ struct CustomCalendar: View {
                 }
             }
             
-            VStack(spacing: 15) {
-                Text("Tasks")
-                    .font(.title2.bold())
-                    .frame(maxWidth: .infinity, alignment: .leading)
-                    .padding(.vertical , 20)
-                
-                if let task = tasks.first(where: { task in
-                    return isSameDay(date1: task.taskDate, date2: currentDate)
-                }) {
-                    
-                    ForEach(task.task) { task in
-                        
-                        // For custom timing
-                        VStack(alignment: .leading, spacing: 10) {
-                            Text(task.time.addingTimeInterval(CGFloat.random(in: 0...5000)), style: .time)
-                            
-                            Text(task.title)
-                                .font(.title2.bold())
-                        }
-                        .padding(.vertical, 10)
-                        .padding(.horizontal)
-                        .frame(maxWidth: .infinity, alignment: .leading)
-                        .background(
-                            Color("Purple")
-                                .opacity(0.5)
-                                .cornerRadius(10)
-                                .frame(maxWidth: .infinity)
-
-                        )
-                        
-                    }
-                     
-                }else {
-                    Text("No Task Found")
-                }
-            }
-            .padding()
+//            VStack(spacing: 15) {
+////                Text("Tasks")
+////                    .font(.title2.bold())
+////                    .frame(maxWidth: .infinity, alignment: .leading)
+////                    .padding(.vertical , 20)
+//
+//                if let task = tasks.first(where: { task in
+//                    return isSameDay(date1: task.taskDate, date2: currentDate)
+//                }) {
+//
+//                    ForEach(task.task) { task in
+//
+//                        // For custom timing
+//                        VStack(alignment: .leading, spacing: 10) {
+//                            Text(task.time.addingTimeInterval(CGFloat.random(in: 0...5000)), style: .time)
+//
+//                            Text(task.title)
+//                                .font(.title2.bold())
+//                        }
+//                        .padding(.vertical, 10)
+//                        .padding(.horizontal)
+//                        .frame(maxWidth: .infinity, alignment: .leading)
+//                        .background(
+//                            Color("Purple")
+//                                .opacity(0.5)
+//                                .cornerRadius(10)
+//                                .frame(maxWidth: .infinity)
+//
+//                        )
+//
+//                    }
+//
+//                }else {
+//                    Text("No Task Found")
+//                }
+//            }
+//            .padding()
 
             
         }
@@ -146,13 +147,13 @@ struct CustomCalendar: View {
                     Spacer()
 
                     Circle()
-                        .fill(isSameDay(date1: task.taskDate, date2: currentDate) ? .white : Color("Pink") )
+                        .fill(isSameDay(date1: task.taskDate, date2: currentDate) ? .white : Color(.orange) )
                         .frame(width: 8, height: 8)
 
                 }else {
                     Text("\(value.day)")
                         .font(.title3.bold())
-                        .foregroundColor(isSameDay(date1: value.date , date2: currentDate) ? .white : .primary)
+                        .foregroundColor(isSameDay(date1: value.date , date2: currentDate) ? .white : .gray)
                         .frame(maxWidth: .infinity)
 
                     Spacer()
