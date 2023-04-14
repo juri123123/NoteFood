@@ -6,6 +6,22 @@
 //
 
 import Foundation
+import AudioToolbox
+
+struct Food: Identifiable {
+    var id = UUID().uuidString
+    var carbo: Double = 0.0//탄수화물
+    var protein: Double = 0.0//단백질
+    var province: Double = 0.0//지방
+    var water: Int = 0//수분
+    var today: Date = Date()
+}
+//
+//struct FoodMetaData: Identifiable {
+//    var id = UUID().uuidString
+//    var food: [Food]
+//    var foodDate: Date
+//}
 
 struct Task: Identifiable {
     var id = UUID().uuidString
@@ -30,12 +46,13 @@ func getSampleDate(offset: Int) -> Date {
 }
 
 
+var foods: [Food] = [
+    Food(carbo: 3.2, protein: 2.1, province: 1.0, water: 300)
+]
 var tasks: [TaskMetaData] = [
 
     TaskMetaData(task: [
         Task(title: "Talk to iJustine"),
-        Task(title: "iPhone 14 Great Design Change😀"),
-        Task(title: "Nothing Much Workout !!!")
     ], taskDate:   getSampleDate(offset: 1)),
     
     TaskMetaData(task: [

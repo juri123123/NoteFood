@@ -35,9 +35,8 @@ struct MainPageView: View {
                     }
                     CustomCalendar(currentDate: $currentDate)
                     HStack(spacing: 200) {
-                        Button(action: {
-                            
-                        }) {
+                        //View 넘길 때 체크된 날짜 정보도 넘기기
+                        NavigationLink(destination: AddView()) {
                             ZStack{
                                 Circle()
                                     .frame(width: 45)
@@ -48,9 +47,7 @@ struct MainPageView: View {
                             }
                         }
                         
-                        Button(action: {
-                            
-                        }) {
+                        NavigationLink(destination: ResultView()) {
                             ZStack{
                                 Circle()
                                     .frame(width: 45)

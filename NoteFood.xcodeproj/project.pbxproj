@@ -18,6 +18,8 @@
 		CB9EBFD229DD702F00C9687B /* DateValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9EBFD129DD702F00C9687B /* DateValue.swift */; };
 		CB9EBFD429DE9B6A00C9687B /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9EBFD329DE9B6A00C9687B /* Task.swift */; };
 		CB9EBFD629DEA22E00C9687B /* CustomCalendar.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9EBFD529DEA22E00C9687B /* CustomCalendar.swift */; };
+		CB9EBFD829E55F4700C9687B /* AddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9EBFD729E55F4700C9687B /* AddView.swift */; };
+		CB9EBFDA29E55F8B00C9687B /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9EBFD929E55F8B00C9687B /* ResultView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 		CB9EBFD129DD702F00C9687B /* DateValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateValue.swift; sourceTree = "<group>"; };
 		CB9EBFD329DE9B6A00C9687B /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		CB9EBFD529DEA22E00C9687B /* CustomCalendar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCalendar.swift; sourceTree = "<group>"; };
+		CB9EBFD729E55F4700C9687B /* AddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddView.swift; sourceTree = "<group>"; };
+		CB9EBFD929E55F8B00C9687B /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +78,8 @@
 				CB9EBFD129DD702F00C9687B /* DateValue.swift */,
 				CB9EBFD329DE9B6A00C9687B /* Task.swift */,
 				CB9EBFD529DEA22E00C9687B /* CustomCalendar.swift */,
+				CB9EBFD729E55F4700C9687B /* AddView.swift */,
+				CB9EBFD929E55F8B00C9687B /* ResultView.swift */,
 			);
 			path = NoteFood;
 			sourceTree = "<group>";
@@ -164,10 +170,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CB9EBFD829E55F4700C9687B /* AddView.swift in Sources */,
 				CB9EBFC529DD554F00C9687B /* ProfileView.swift in Sources */,
 				CB9EBFC729DD593500C9687B /* MainPageView.swift in Sources */,
 				CB9EBFAA29DD466B00C9687B /* NoteFoodApp.swift in Sources */,
 				CB9EBFD629DEA22E00C9687B /* CustomCalendar.swift in Sources */,
+				CB9EBFDA29E55F8B00C9687B /* ResultView.swift in Sources */,
 				CB9EBFD429DE9B6A00C9687B /* Task.swift in Sources */,
 				CB9EBFD229DD702F00C9687B /* DateValue.swift in Sources */,
 			);
