@@ -8,9 +8,78 @@
 import SwiftUI
 
 struct ResultView: View {
+    //DB에서 영양성분 받아와야 함
+    private var carbo: Double = 0
+    private var protein: Double = 0
+    private var province: Double = 0
+    private var water: Int = 0
     
     var body: some View {
-        Text("result")
+        ZStack{
+            ColorManager.BackgroundColor.ignoresSafeArea()
+            VStack{
+                Text("Today")
+                    .font(.title2)
+                
+                Divider()
+                    .frame(width: 350, height:2)
+                    .overlay(.gray)
+                    .frame(height:30)
+                VStack(alignment:.leading){
+                    
+                    HStack{
+                        Text("탄수화물: ")
+                        Spacer()
+                        //Text(carbo)
+                        Text("g")
+                    
+                        
+                    }.padding()
+                    HStack{
+                        Text("단백질: ")
+                        Spacer()
+                        
+                        Text("g")
+                    
+                        
+                    }.padding()
+                    HStack{
+                        Text("지방: ")
+                        Spacer()
+                        
+                        Text("g")
+                    
+                        
+                    }.padding()
+                    HStack{
+                        Text("물: ")
+                        Spacer()
+                        
+                        Text("ml")
+                    
+                        
+                    }.padding()
+                    Spacer()
+                }
+                Spacer()
+                Button(action: {
+                    // 영양성분 분석 로직 필요
+                    // 팝업 띄우기
+                }, label: {
+                    ZStack{
+                        Circle()
+                            .frame(height: 50)
+                            .foregroundColor(.orange)
+                        Image(systemName: "questionmark")
+                            .foregroundColor(.white)
+                            .font(.system(size: 25))
+                    }
+                })
+                .padding()
+            }
+            
+           
+        }
     }
 }
 
