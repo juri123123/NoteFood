@@ -14,6 +14,8 @@ struct ResultView: View {
     private var province: Double = 0
     private var water: Int = 0
     
+    @State private var alertShow = false
+    
     var body: some View {
         ZStack{
             ColorManager.BackgroundColor.ignoresSafeArea()
@@ -64,7 +66,8 @@ struct ResultView: View {
                 Spacer()
                 Button(action: {
                     // 영양성분 분석 로직 필요
-                    // 팝업 띄우기
+                    // alert 표시 --> alert말고 bottom sheet 사용하는게 좋을 듯
+                    alertShow = true
                 }, label: {
                     ZStack{
                         Circle()
@@ -75,6 +78,11 @@ struct ResultView: View {
                             .font(.system(size: 25))
                     }
                 })
+                .alert("GREAT!", isPresented: $alertShow) {
+                    Button("OK", role: .cancel){
+                        
+                    }
+                }
                 .padding()
             }
             
