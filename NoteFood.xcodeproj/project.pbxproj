@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB68CF492A0CBA69001F599B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB68CF482A0CBA69001F599B /* User.swift */; };
 		CB9EBFAA29DD466B00C9687B /* NoteFoodApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB9EBFA929DD466B00C9687B /* NoteFoodApp.swift */; };
 		CB9EBFAE29DD466C00C9687B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB9EBFAD29DD466C00C9687B /* Assets.xcassets */; };
 		CB9EBFB129DD466C00C9687B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB9EBFB029DD466C00C9687B /* Preview Assets.xcassets */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		CB68CF482A0CBA69001F599B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		CB9EBFA629DD466B00C9687B /* NoteFood.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NoteFood.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB9EBFA929DD466B00C9687B /* NoteFoodApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteFoodApp.swift; sourceTree = "<group>"; };
 		CB9EBFAD29DD466C00C9687B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -80,6 +82,7 @@
 				CB9EBFD529DEA22E00C9687B /* CustomCalendar.swift */,
 				CB9EBFD729E55F4700C9687B /* AddView.swift */,
 				CB9EBFD929E55F8B00C9687B /* ResultView.swift */,
+				CB68CF482A0CBA69001F599B /* User.swift */,
 			);
 			path = NoteFood;
 			sourceTree = "<group>";
@@ -175,6 +178,7 @@
 				CB9EBFC729DD593500C9687B /* MainPageView.swift in Sources */,
 				CB9EBFAA29DD466B00C9687B /* NoteFoodApp.swift in Sources */,
 				CB9EBFD629DEA22E00C9687B /* CustomCalendar.swift in Sources */,
+				CB68CF492A0CBA69001F599B /* User.swift in Sources */,
 				CB9EBFDA29E55F8B00C9687B /* ResultView.swift in Sources */,
 				CB9EBFD429DE9B6A00C9687B /* Task.swift in Sources */,
 				CB9EBFD229DD702F00C9687B /* DateValue.swift in Sources */,

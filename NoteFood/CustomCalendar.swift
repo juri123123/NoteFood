@@ -82,43 +82,48 @@ struct CustomCalendar: View {
                 }
             }
             
-//            VStack(spacing: 15) {
-////                Text("Tasks")
-////                    .font(.title2.bold())
-////                    .frame(maxWidth: .infinity, alignment: .leading)
-////                    .padding(.vertical , 20)
-//
-//                if let task = tasks.first(where: { task in
-//                    return isSameDay(date1: task.taskDate, date2: currentDate)
-//                }) {
-//
-//                    ForEach(task.task) { task in
-//
-//                        // For custom timing
-//                        VStack(alignment: .leading, spacing: 10) {
-//                            Text(task.time.addingTimeInterval(CGFloat.random(in: 0...5000)), style: .time)
-//
-//                            Text(task.title)
-//                                .font(.title2.bold())
-//                        }
-//                        .padding(.vertical, 10)
-//                        .padding(.horizontal)
-//                        .frame(maxWidth: .infinity, alignment: .leading)
-//                        .background(
-//                            Color("Purple")
-//                                .opacity(0.5)
-//                                .cornerRadius(10)
-//                                .frame(maxWidth: .infinity)
-//
-//                        )
-//
-//                    }
-//
-//                }else {
-//                    Text("No Task Found")
-//                }
-//            }
-//            .padding()
+            VStack(spacing: 0) {
+//                Text("Tasks")
+//                    .font(.title2.bold())
+//                    .frame(maxWidth: .infinity, alignment: .leading)
+//                    .padding(.vertical , 20)
+
+                if let task = foods.first(where: { task in
+                    return isSameDay(date1: task.foodDate, date2: currentDate)
+                }) {
+
+                    ForEach(task.food) { task in
+
+                        VStack(alignment: .leading, spacing: 10) {
+                            
+                            Text("탄수화물: " + String(format: "%.1f", task.carbo))
+                                .font(.body)
+                            Text("단백질: " + String(format: "%.1f", task.protein))
+                                .font(.body)
+                            Text("지방: " + String(format: "%.1f", task.province))
+                                .font(.body)
+                            Text("수분: \(task.water)")
+                                .font(.body)
+                           
+                        }
+                        .padding(.vertical, 10)
+                        .padding(.horizontal)
+                        .frame(maxWidth: .infinity, alignment: .leading)
+                        .background(
+                            Color("Purple")
+                                .opacity(0.5)
+                                .cornerRadius(10)
+                                .frame(maxWidth: .infinity)
+
+                        )
+
+                    }
+
+                }else {
+                    Text("No Task Found")
+                }
+            }
+            .padding()
 
             
         }
@@ -135,19 +140,19 @@ struct CustomCalendar: View {
             
             if value.day != -1 {
                 
-                if let task = tasks.first(where: { task in
-                    return isSameDay(date1: task.taskDate, date2: value.date)
+                if let task = foods.first(where: { task in
+                    return isSameDay(date1: task.foodDate, date2: value.date)
                 }) {
 
                     Text("\(value.day)")
                         .font(.title3.bold())
-                        .foregroundColor(isSameDay(date1: task.taskDate, date2: currentDate) ? .white : .primary)
+                        .foregroundColor(isSameDay(date1: task.foodDate, date2: currentDate) ? .white : .primary)
                         .frame(maxWidth: .infinity)
 
                     Spacer()
 
                     Circle()
-                        .fill(isSameDay(date1: task.taskDate, date2: currentDate) ? .white : Color(.orange) )
+                        .fill(isSameDay(date1: task.foodDate, date2: currentDate) ? .white : Color(.orange) )
                         .frame(width: 8, height: 8)
 
                 }else {
